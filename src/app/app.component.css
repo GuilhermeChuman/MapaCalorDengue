@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.section{
+    height: 100vh;
+    background-color: #dbdbdb;
+}
+
+.menuItem{
+    cursor: pointer;
+}
+
+.recomendTitle{
+    height: 50px;
+    color: black;
+    font-family: 'Archivo Black';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.Logo{
+    height: 100%;
+    font-family: 'Luckiest Guy';
+    font-size: 48px;
+}
+
+.Text{
+    max-width: 500px;
+    justify-content: center;
+    font-family: 'Archivo Black';
+}
+
+p{
+    margin: 0px;
+}
+
+.Header{
+    height: 40px;
+    background-color: #969696;
+    color: black;
+    font-family: 'Archivo Black';
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 6px #3f3f3f;
+}
+
+.Map{
+    background-color: chocolate;
+
+}
+.Recomend{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../assets/img/bg01.png');
+    box-shadow: 10px 10px 6px #dbdbdb;
+}
+
+
+.recomendBody{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logoAdt{
+    height: 100px;
+    width: 100px;
+}
+
+.logoFatec{
+    height: 100px;
+    width: 150px;
+}
+
+mat-divider{
+    height: 80px;
+    padding: 10px;
+}
+
+.Content{
+    display: flex;
+    flex-direction: column;
+}
+
