@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 .body{
     height: 100vh;
     overflow-y: hidden;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .BodyContent{
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +34,7 @@
 }
 
 .section{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #dbdbdb;
 }
 
@@ -46,7 +50,7 @@
 .recomendTitle{
     height: 50px;
     color: black;
-    font-family: 'Archivo Black';
+    font-family: 'Poppins';
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -63,7 +67,7 @@
 .Text{
     max-width: 500px;
     justify-content: center;
-    font-family: 'Archivo Black';
+    font-family: 'Poppins';
 }
 
 p{
@@ -71,16 +75,23 @@ p{
 }
 
 .Header{
+    font-size: 17px;
     height: 40px;
-    background-color: #969696;
+    background-color: #a03737;
     color: black;
-    font-family: 'Archivo Black';
+    font-weight: bold;
+    font-family: 'Poppins';
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 5px 6px #3f3f3f;
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.menuItem:hover{
+    font-size: 20px;
+
 }
 
 .altContato{
