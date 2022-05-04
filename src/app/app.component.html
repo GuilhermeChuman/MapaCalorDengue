@@ -1,4 +1,4 @@
-<div class="Title section" id="Mapa">
+<div class="body">
   <div class="Header" fxLayout="row" fxLayoutAlign="space-around center">
     <span class="menuItem" (click)="scroll('Mapa')">
       Mapa
@@ -10,46 +10,57 @@
       Contato
     </span>
   </div>
-</div>
-<div class="Recomend section" id="Recomendaçoes">
-  <div class="Content">
-    <div class="recomendTitle">
-      <p>
-        Recomendações de Saúde
-      </p>
+  <div class="BodyContent">
+    <div class="Title section" id="Mapa">
+    
     </div>
-    <div class="recomendBody" fxLayout="row" fxLayoutAlign="space-evenly center">
-        <div class="item">
-          <h1>Item 1</h1>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    <div class="Recomend section" id="Recomendaçoes">
+      <div class="Content">
+        <div class="recomendTitle">
+          <p>
+            Recomendações de Saúde
+          </p>
         </div>
-        <div class="item">
-          <h1>Item 2</h1>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        <div class="recomendBody" fxLayout="row" fxLayoutAlign="flex-start">
+            <div class="item">
+              <h1>Item 1</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            <div class="item">
+              <h1>Item 2</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            <div class="item">
+              <h1>Item 3</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+            <div class="item">
+              <h1>Item 4</h1>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
         </div>
-        <div class="item">
-          <h1>Item 3</h1>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
-        <div class="item">
-          <h1>Item 4</h1>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div id="Contato" class="Footer section" fxLayout="column" fxLayoutAlign="space-evenly center">
-  <p>Apoio:</p>
-  <div fxLayout="row" fxLayoutAlign="space-evenly center">
-    <div>
-      <img class="logoAdt" src="../assets/img/adtLogo.png"> 
+    <div id="Contato" class="Footer section" fxLayout="column" fxLayoutAlign="space-around center">
+      <h2>Apoio:</h2>
+      <div fxLayout="row" fxLayoutAlign="space-evenly center">
+        <div>
+          <a  target="_blank" 
+              href="https://www.adamantina.sp.gov.br">
+              <img class="logoAdt" src="../assets/img/adtLogo.png"> 
+          </a>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <div>
+          <a  target="_blank" 
+              href="https://www.adamantina.sp.gov.br">
+              <img class="logoFatec" src="../assets/img/cropped-Logo-fatec-Adamantina-1-2.png"> 
+          </a>
+        </div>
+      </div>
+      <div class="altContato">
+        Desenvolvido pelos alunos do 3º Semestre de Ciência de Dados
+      </div>
     </div>
-    <mat-divider [vertical]="true"></mat-divider>
-    <div>
-      <img class="logoFatec" src="../assets/img/cropped-Logo-fatec-Adamantina-1-2.png"> 
-    </div>
-  </div>
-  <div>
-    Desenvolvido pelos alunos do 3º Semestre de Ciência de Dados
   </div>
 </div>
