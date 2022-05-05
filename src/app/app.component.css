@@ -166,3 +166,10 @@ mat-divider{
     flex-direction: column;
 }
 
+.infoLegend{
+    background-color: aliceblue !important;
+    border-radius: 5px !important;
+    padding: 15px !important;
+    box-shadow: 5px 5px 10px !important;
+}
+

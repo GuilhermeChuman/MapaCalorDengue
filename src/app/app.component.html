@@ -11,10 +11,11 @@
       </span>
   </div>
   <div class="BodyContent">
-    <div class="Title section" id="Mapa">
-      <div class="map"
+    <div class="Title section" >
+      <div class="map" id="Mapa"
           leaflet 
-          [leafletOptions]="options">
+          [leafletOptions]="options"
+          (leafletMapReady)="onMapReady($event)">
       </div>
     </div>
     <div class="Recomend section" id="Recomendacoes">
