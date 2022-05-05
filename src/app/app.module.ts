@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDividerModule } from '@angular/material/divider';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { AppComponent } from './app.component';
-import { MapaComponent } from './mapa/mapa.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MapaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FlexLayoutModule,
-    MatDividerModule
+    MatDividerModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,7 @@
       <span class="menuItem" (click)="scroll('Mapa')">
         Mapa
       </span>
-      <span class="menuItem" (click)="scroll('Recomendaçoes')">
+      <span class="menuItem" (click)="scroll('Recomendacoes')">
         Recomendaçoes
       </span>
       <span class="menuItem" (click)="scroll('Contato')">
@@ -12,9 +12,12 @@
   </div>
   <div class="BodyContent">
     <div class="Title section" id="Mapa">
-      <app-mapa></app-mapa>
+      <div class="map"
+          leaflet 
+          [leafletOptions]="options">
+      </div>
     </div>
-    <div class="Recomend section" id="Recomendaçoes">
+    <div class="Recomend section" id="Recomendacoes">
       <div class="Content">
         <div class="recomendTitle">
           <p>
