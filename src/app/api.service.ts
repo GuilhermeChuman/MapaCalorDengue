@@ -19,4 +19,32 @@ export class ApiService {
         return resp;
     })  
   }
+
+  public CasosMes(): any{
+
+    return this.http.get(environment.api_url+environment.casos_mes).toPromise().then( (resp: any) =>{
+        return resp;
+    })  
+  }
+
+  public CasosByBairro(): any{
+
+    return this.http.get(environment.api_url+environment.casos_by_bairro).toPromise().then( (resp: any) =>{
+        return resp;
+    })  
+  }
+
+  public CasosByMes(): any{
+
+    return this.http.get(environment.api_url+environment.casos_by_mes).toPromise().then( (resp: any) =>{
+        return resp;
+    })  
+  }
+
+  public CasosByIdade(): any{
+
+    return this.http.get(environment.api_url+environment.casos_by_idade).toPromise().then( (resp: any) =>{
+        return resp;
+    })  
+  }
 }
