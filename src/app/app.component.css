@@ -49,6 +49,8 @@
     cursor: pointer;
     font-family: 'Poppins';
     font-weight: bold;
+    /* background: transparent;
+    border: none !important; */
 }
 
 .recomendTitle{
@@ -117,7 +119,7 @@ p{
 .Recomend{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center !important;
     box-shadow: 10px 10px 6px #dbdbdb;
 }
 
@@ -128,7 +130,7 @@ p{
     flex-flow: row wrap;
     display: flex;
     align-content: flex-start;
-    justify-content: space-between;
+    justify-content: center !important;
 }
 
 .Title{
@@ -147,9 +149,8 @@ p{
 .item{
     margin-left: 10px;
     margin-right: 10px;
-    width: 300px;
-    min-width: 300px;
     font-family: 'Poppins';
+
 }
 
 .logoAdt{

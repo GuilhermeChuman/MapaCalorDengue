@@ -1,18 +1,18 @@
 <div class="body">
   <div class="Header" fxLayout="row" fxLayoutAlign="space-around center">
-      <span class="menuItem" (click)="scroll('Mapa')">
+      <label class="menuItem" (click)="scroll('Title')">
         Mapa
-      </span>
-      <span class="menuItem" (click)="scroll('Recomendacoes')">
-        Recomendaçoes
-      </span>
-      <span class="menuItem" (click)="scroll('Contato')">
+      </label>
+      <label class="menuItem" (click)="scroll('Recomendacoes')">
+        Outras Estatísticas
+      </label>
+      <label class="menuItem" (click)="scroll('Contato')">
         Contato
-      </span>
+      </label>
   </div>
   <div class="BodyContent">
-    <div class="Title section" >
-      <div class="map" id="Mapa"
+    <div class="Title section" id="Title">
+      <div class="map" id="Mapa" *ngIf="isReady"
           leaflet 
           [leafletOptions]="options"
           (leafletMapReady)="onMapReady($event)">
@@ -22,25 +22,21 @@
       <div class="Content">
         <div class="recomendTitle">
           <p>
-            Recomendações de Saúde
+            Outras Estatísticas
           </p>
         </div>
         <div class="recomendBody" fxLayout="row" fxLayoutAlign="flex-start">
             <div class="item">
               <h1>Item 1</h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              <canvas id="myChart" width="400" height="400"></canvas>
             </div>
             <div class="item">
               <h1>Item 2</h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              <canvas id="myChart2" width="400" height="400"></canvas>
             </div>
             <div class="item">
               <h1>Item 3</h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-            </div>
-            <div class="item">
-              <h1>Item 4</h1>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              <canvas id="myChart3" width="400" height="400"></canvas>
             </div>
         </div>
       </div>
