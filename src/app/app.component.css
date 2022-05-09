@@ -48,7 +48,11 @@
 
 .menuItem{
     cursor: pointer;
+    background-color:transparent;
+    border: none;
+    font-size: 0.9em;
     font-family: 'Poppins';
+    /* height: 2em; */
 }
 
 .recomendTitle{
@@ -129,8 +133,27 @@ p{
     margin-left: 5px;
 }
 
-.altAdt span{
-    display: flex;
+@media only screen and (max-width: 490px) {
+
+    .altAdtItem{
+        font-size: 2vw; 
+        display: flex;
+    }
+    .altAdtItem mat-icon{
+        font-size: 3.5vw; 
+    }
+}
+
+@media only screen and (max-width: 287px) {
+
+    .altAdtItem{
+        font-size: 1.5vw; 
+        display: flex;
+    }
+
+    .altAdtItem mat-icon{
+        font-size: 3vw; 
+    }
 }
 
 .rowContato{
@@ -172,6 +195,10 @@ p{
 
 .itemContato{
     padding-top: 10px;
+}
+
+.altAdtItem{
+    display: flex;
 }
 
 .altAdtItem:hover{
