@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, ChartItem, registerables } from 'chart.js';
+import { MatIconModule } from '@angular/material/icon';
+
 Chart.register(...registerables);
 import * as L from 'leaflet';
 import { ApiService } from './api.service';

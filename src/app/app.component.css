@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap%27');
 @import url('../../node_modules/leaflet/dist/leaflet.css');
 @import url('https://unpkg.com/leaflet@1.8.0/dist/leaflet.css');
 
@@ -48,16 +49,12 @@
 .menuItem{
     cursor: pointer;
     font-family: 'Poppins';
-    font-weight: bold;
-    /* background: transparent;
-    border: none !important; */
 }
 
 .recomendTitle{
     height: 50px;
     color: black;
     font-family: 'Poppins';
-    font-size: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -83,25 +80,29 @@ p{
 .Header{
     font-size: 17px;
     height: 40px;
-    background-color: #a03737;
-    color: black;
-    font-weight: bold;
+    background-color: #b60914;
+    color: #ffffff;
     font-family: 'Poppins';
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0px 5px 6px #3f3f3f;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
 }
 
+.chart2{
+    width: 100vw;
+    flex-flow: row wrap;
+}
+
 .menuItem:hover{
-    font-size: 20px;
+    color: #fdc6c6;
 
 }
 
 .altContato{
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -111,8 +112,9 @@ p{
     display: flex;
     place-content: center space-around;
     align-items: center;
-    justify-content: flex-end !important;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: 'Poppins';
 }
 
@@ -123,12 +125,26 @@ p{
     box-shadow: 10px 10px 6px #dbdbdb;
 }
 
+.altAdt{
+    margin-left: 5px;
+}
+
+.altAdt span{
+    display: flex;
+}
+
+.rowContato{
+    display: block;
+    width: 100%;
+    word-break: break-all;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 
 .recomendBody{
     padding-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
-    flex-flow: row wrap;
     display: flex;
     align-content: flex-start;
     justify-content: center !important;
@@ -148,11 +164,18 @@ p{
 }
 
 .item{
-    width: 95%;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    min-width: 300px;
     font-family: 'Poppins';
     align-self: center;
+}
+
+.itemContato{
+    padding-top: 10px;
+}
+
+.altAdtItem:hover{
+    color: #b60914;
 }
 
 .item h1{
@@ -181,8 +204,8 @@ p{
 }
 
 .logoFatec{
-    height: 100px;
-    width: 150px;
+    height: 75px;
+    width: 100px;
 }
 
 mat-divider{

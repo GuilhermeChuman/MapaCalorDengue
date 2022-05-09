@@ -21,18 +21,18 @@
     <div class="Recomend section" id="Recomendacoes">
       <div class="Content">
         <div class="recomendBody" fxLayout="column" fxLayoutAlign="flex-start">
-            <div class="item">
+            <div class="item" fxFlex="90">
               <h1>Avanço da doença</h1>
               <canvas id="myChart2" width="2" height="1"></canvas>
             </div>
-            <div fxLayout="row">
-              <div class="item">
+            <div class="chart2" fxLayout="row" >
+              <div class="item" fxLayout="column" fxFlex="45">
                 <h1>Casos por idade</h1>
                 <canvas id="myChart3" width="1" height="1"></canvas>
               </div>
-              <div class="item">
+              <div class="item" fxLayout="column" fxFlex="45">
                 <h1>Bairros mais afetados</h1>
-                <canvas id="myChart" width="500" height="1000"></canvas>
+                <canvas id="myChart" width="1" height="1"></canvas>
               </div>
             </div>
         </div>
@@ -40,19 +40,32 @@
     </div>
     <div id="Contato" class="Footer section" fxLayout="column" fxLayoutAlign="space-around center">
       <h2>Apoio:</h2>
-      <div fxLayout="row" fxLayoutAlign="space-evenly center">
-        <div>
+      <div class="rowContato">
+        <div fxLayout="row" class="itemContato">
           <a  target="_blank" 
               href="https://www.adamantina.sp.gov.br">
               <img class="logoAdt" src="../assets/img/adtLogo.png"> 
           </a>
+          <div class="altAdt" fxLayout="column">
+              <span class="altAdtItem"><mat-icon> phone</mat-icon> (18) 3502-9000</span>
+              <span class="altAdtItem"><mat-icon> email</mat-icon>ouvidoria.pma@adamantina.sp.gov.br</span>
+              <span class="altAdtItem"><mat-icon> map</mat-icon>Rua Osvaldo Cruz, 262 - Centro</span>
+              <span class="altAdtItem"><mat-icon>watch_later</mat-icon>Segunda a Sexta Feira das 07:30 as 11:00 e das 13:00 as 17:30</span>
+          </div>
         </div>
-        <mat-divider [vertical]="true"></mat-divider>
-        <div>
-          <a  target="_blank" 
-              href="https://www.adamantina.sp.gov.br">
-              <img class="logoFatec" src="../assets/img/cropped-Logo-fatec-Adamantina-1-2.png"> 
-          </a>
+        <div fxLayout="row" class="itemContato">
+          <div fxLayout="row">
+            <a  target="_blank" 
+                href="https://www.fatec.edu.br/adamantina/">
+                <img class="logoFatec" src="../assets/img/cropped-Logo-fatec-Adamantina-1-2.png"> 
+            </a>
+            <div class="altAdt" fxLayout="column">
+              <span class="altAdtItem"><mat-icon> phone</mat-icon>(18) 3522-4181</span>
+              <span class="altAdtItem"><mat-icon> email</mat-icon> f291adm@cps.sp.gov.br</span>
+              <span class="altAdtItem"><mat-icon> map</mat-icon>Rua Paraná, 400 - Jardim Brasil</span>
+              <span class="altAdtItem"><mat-icon>watch_later</mat-icon>Segunda a Sexta Feira das 08:00 as 23:00</span>
+            </div>
+          </div> 
         </div>
       </div>
       <div class="altContato">
