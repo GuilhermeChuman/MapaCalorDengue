@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChartsComponent } from './components/charts/charts.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { HealthCareComponent } from './components/health-care/health-care.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 
 const routes: Routes = [
@@ -11,19 +14,19 @@ const routes: Routes = [
   {
     path: 'mapa',
     component: MapaComponent,
-  }
-//   {
-//     path: 'profile',
-//     component: ProfileComponent,
-//   },
-//   {
-//     path: 'about',
-//     component: AboutComponent,
-//   },
-//   {
-//     path: 'help',
-//     component: HelpComponent,
-//   },
+  },
+  {
+    path: 'charts',
+    component: ChartsComponent,
+  },
+  {
+    path: 'health-care',
+    component: HealthCareComponent,
+  },
+  {
+    path: 'help',
+    component: ContactsComponent,
+  },
 //   {
 //     path: '**',
 //     component: NotFoundComponent,

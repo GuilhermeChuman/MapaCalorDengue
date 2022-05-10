@@ -57,7 +57,7 @@ export class MapaComponent implements OnInit {
 title = 'MapaCalorDengue';
 
   async ngOnInit(){
-    this._apiService.CasosMesGeoJson().then( (resp:any)=>{
+    await this._apiService.CasosMesGeoJson().then( (resp:any)=>{
       this.dataSourceMaps = resp;
       this.isReady = true;
     });
@@ -109,39 +109,7 @@ title = 'MapaCalorDengue';
             d > 20   ? '#E3931A' :
             d > 10   ? '#E0DB4C' : '#FFEDA0';
         }
-    
-        const legend = new L.Control({ position: 'bottomright' });
-        
-        legend.onAdd = map => {
-        
-          let div = L.DomUtil.create('div', 'infoLegend'),
-            grades = [0, 10, 20, 50, 75, 100],
-            labels = [],
-            from, to;
-    
-            div.style.backgroundColor = 'aliceblue';
-            div.style.borderRadius = '5px';
-            div.style.padding = '10px';
-            div.style.boxShadow = '5px 5px 10px';
-    
-          
-          for (var i = 0; i < grades.length; i++) {
-            from = grades[i];
-            to = grades[i + 1];
-          
-            labels.push(
-              '<i class="legendItem" style="display: inline-block !important; width: 10px !important; height: 10px !important; border: solid !important; border-width: thin !important; background:' + getColor(from + 1) + '"></i> ' +
-              from + (to ? '&ndash;' + to : '+'));
-          }
-          
-          div.innerHTML = labels.join('<br>');
-          return div;
-        };
-        
-        legend.addTo(map);
-    
-        //const info = new L.Control({ position: 'topright' });
-    
+                
         this.info.onAdd = map => {
         
           let div = L.DomUtil.create('div', 'info');

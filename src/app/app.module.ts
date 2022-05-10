@@ -9,13 +9,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { HttpClientModule, HttpHandler } from '@angular/common/http';
 import { ApiService } from './api.service';
+import { ChartsComponent } from './components/charts/charts.component';
+import { HealthCareComponent } from './components/health-care/health-care.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 
 @NgModule({
-  declarations: [AppComponent, MapaComponent],
+  declarations: [AppComponent, MapaComponent, ChartsComponent, HealthCareComponent, ContactsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +31,8 @@ import { ApiService } from './api.service';
     MatDividerModule,
     MatSnackBarModule,
     LeafletModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],
