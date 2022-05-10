@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap%27');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.linha{
+    display: flex;
+    //flex-wrap: wrap;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cardMapa{
+
+    h1{
+        margin-top: 0px;
+    }
+
+    font-family: 'Poppins';
+    background-color: white;
+    width: 50%;
+    max-height: 350px;
+    min-width: 350px;
+    margin:10px;
+}
+
+.cardMapaFull{
+
+    h1{
+        margin-top: 0px;
+    }
+
+    font-family: 'Poppins';
+    background-color: white;
+    width: 100%;
+    max-height: 350px;
+    margin:10px;
+}
+
+.mapa{
+    min-width: 200px;
+    max-height: 290px !important;
+}
