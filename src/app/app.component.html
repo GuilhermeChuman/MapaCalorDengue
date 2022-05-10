@@ -1,4 +1,52 @@
-<div class="body">
+<mat-toolbar class="mat-elevation-z8">
+  <button
+    class="mat-icon-button"
+    mat-icon-button
+    *ngIf="sidenav.mode === 'over'"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+
+  </button>
+
+  INFODengue
+  
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+    <button mat-button class="menu-button" routerLink="/mapa">
+      <mat-icon>map</mat-icon>
+      <span>Mapa</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/profile">
+      <mat-icon>person</mat-icon>
+      <span>Profile</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/about">
+      <mat-icon>info</mat-icon>
+      <span>About</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/help">
+      <mat-icon>help</mat-icon>
+      <span>Help</span>
+    </button>
+    
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <div class="body">
   <div class="Header" fxLayout="row" fxLayoutAlign="space-around center">
       <button class="menuItem" (click)="scroll('Title')">
         Mapa
@@ -73,4 +121,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

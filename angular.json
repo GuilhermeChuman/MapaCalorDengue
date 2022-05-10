@@ -5,11 +5,10 @@
   "projects": {
     "MapaCalorDengue": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics":{
+          "@schematics/angular:component": {
+              "style": "scss" }
+        },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

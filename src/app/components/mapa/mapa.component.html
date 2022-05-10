@@ -1,0 +1,5 @@
+<div class="map" id="Mapa" *ngIf="isReady"
+     leaflet 
+     [leafletOptions]="options"
+     (leafletMapReady)="onMapReady($event)">
+</div>
