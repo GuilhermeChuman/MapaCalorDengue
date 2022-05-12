@@ -5,10 +5,36 @@
 @import url('https://unpkg.com/leaflet@1.8.0/dist/leaflet.css');
 
 mat-toolbar {
-    background: #2b26a3;
+    background: #8C52FF;
     color: white;
     height: 45px;
     font-family:'Poppins';
+
+    .infoDengueLogo{
+      height: 40px;
+    }
+
+    .logoLink{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+    }
+
+    .dengueManual{
+      font-weight: bold;
+      font-size: 20px;
+      color: white !important;
+    }
+
+    .logoManual{
+      font-weight: bold;
+      background-color: white;
+      padding-left: 3px;
+      padding-right: 3px;
+      margin-right: 5px;
+      color: #8C52FF !important;
+      font-size: 20px;
+    }
 
     .mat-icon-button{
 
@@ -22,7 +48,7 @@ mat-toolbar {
   mat-sidenav {
     width: 250px;
     border-right: none;
-    background: #3E3ACC;
+    background: #742eff;
     color: white;
     padding: 16px;
     text-align: center;
@@ -37,7 +63,7 @@ mat-toolbar {
   }
   
   .content {
-    background-color: #9f9cf8;
+    background-color: #bc9aff;
     height: calc(100vh - 45px);
     overflow: auto;
   }
@@ -96,12 +122,14 @@ mat-toolbar {
   }
 
   ::-webkit-scrollbar-thumb {
-      background: #555555; 
+      //background: #555555; 
+      background: #ffffff; 
       border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-      background: #444444; 
+      //background: #444444; 
+      background: #e2e2e2;
   }
 // .body{
 //     height: 100vh;
