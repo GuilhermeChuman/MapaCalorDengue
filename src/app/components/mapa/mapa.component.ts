@@ -14,6 +14,7 @@ export class MapaComponent implements OnInit {
   constructor(public _apiService: ApiService) { }
 
   dataSourceMaps: any;
+  dataRural: any = '';
   isReady = false;
 
   southBound = L.latLng(-21.72694024964517, -51.10437230961509);
@@ -57,6 +58,14 @@ export class MapaComponent implements OnInit {
 title = 'MapaCalorDengue';
 
   async ngOnInit(){
+
+    await this._apiService.CasosMes().then( (resp:any)=>{
+      resp.forEach((element:any) => {
+        if(element.nome == 'ZONA RURAL')
+          this.dataRural = element.nCasos;
+      });
+    });
+
     await this._apiService.CasosMesGeoJson().then( (resp:any)=>{
       this.dataSourceMaps = resp;
       this.isReady = true;
