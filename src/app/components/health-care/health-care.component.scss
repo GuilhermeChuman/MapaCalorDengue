@@ -15,6 +15,7 @@
     font-family: 'Poppins';
     background-color: white;
     margin:10px;
+    height: max-content;
 
     div h1{
         text-align: center;
@@ -24,15 +25,15 @@
     .apoioContent{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
 .cardApoiador{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: min-content;
-    min-height: 160px;
+    width: 40%;
     margin: 10px;
 
 

@@ -12,6 +12,10 @@ const routes: Routes = [
     redirectTo: 'home',
   },
   {
+    path: 'home',
+    component: MapaComponent,
+  },
+  {
     path: 'mapa',
     component: MapaComponent,
   },
