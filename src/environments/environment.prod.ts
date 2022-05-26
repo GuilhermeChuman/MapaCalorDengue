@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
-  api_url: 'https://mapadengue.000webhostapp.com/api/',
+    //api_url: 'http://localhost:8000/api/',
+  api_url: 'http://new.dev.br:5315/api/',
 
   //casos
   casos_mes_geoJson: 'casosNoMes/GeoJson',
