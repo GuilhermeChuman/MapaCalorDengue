@@ -16,6 +16,7 @@ export class MapaComponent implements OnInit {
   dataSourceMaps: any;
   dataRural: any = '';
   isReady = false;
+  gravidadeRural: any;
 
   southBound = L.latLng(-21.72694024964517, -51.10437230961509);
   northBound = L.latLng(-21.649681004734106, -51.03724982481903);
@@ -63,6 +64,11 @@ title = 'MapaCalorDengue';
       resp.forEach((element:any) => {
         if(element.nome == 'ZONA RURAL')
           this.dataRural = element.nCasos;
+          this.gravidadeRural =  this.dataRural > 19 ? 'red' :
+                                 this.dataRural > 14  ? 'darkOrange' :
+                                 this.dataRural > 9   ? 'orange' : 
+                                 this.dataRural > 4   ? 'lightOrange' :
+                                 this.dataRural > 0   ? 'yellow' : 'lightYellow';
       });
     });
 
@@ -112,11 +118,11 @@ title = 'MapaCalorDengue';
         this.MyMap = map;
         
         function getColor(d: any) {
-          return d > 100 ? '#69000E' :
-            d > 75  ? '#E31D1A' :
-            d > 50   ? '#E3531A' :
-            d > 20   ? '#E3931A' :
-            d > 10   ? '#E0DB4C' : '#FFEDA0';
+          return d > 19 ? '#FF0100' :
+            d > 14  ? '#FD6000' :
+            d > 9   ? '#FF9B00' : 
+            d > 4   ? '#FFD81B' :
+            d > 0   ? '#FFFF00' : '#FFEDA0';
         }
                 
         this.info.onAdd = map => {
