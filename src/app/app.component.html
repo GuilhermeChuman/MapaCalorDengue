@@ -13,9 +13,7 @@
   <a class="logoLink" href="/">
     <p class="logoManual">INFO</p><p class="dengueManual">DENGUE</p>
   </a>
-  
-  <!-- <img class="infoDengueLogo" src="../assets/img/infoDengueLogo.png"> -->
-  
+    
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -25,18 +23,18 @@
       <mat-icon>map</mat-icon>
       <span>Mapa</span>
     </button>
-    <button mat-button class="menu-button" routerLink="/charts">
+    <button mat-button class="menu-button" routerLink="/metricas">
       <mat-icon>timeline</mat-icon>
       <span>Métricas</span>
     </button>
-    <button mat-button class="menu-button" routerLink="/health-care">
+    <button mat-button class="menu-button" routerLink="/dicas">
       <mat-icon>healing</mat-icon>
       <span>Dicas de Saúde</span>
     </button>
 
     <mat-divider></mat-divider>
 
-    <button mat-button class="menu-button" routerLink="/help">
+    <button mat-button class="menu-button" routerLink="/contato">
       <mat-icon>contact_support</mat-icon>
       <span>Contatos</span>
     </button>
@@ -50,80 +48,3 @@
   </mat-sidenav-content>
   
 </mat-sidenav-container>
-
-<!-- <div class="body">
-  <div class="Header" fxLayout="row" fxLayoutAlign="space-around center">
-      <button class="menuItem" (click)="scroll('Title')">
-        Mapa
-      </button>
-      <button class="menuItem" (click)="scroll('Recomendacoes')">
-        Outras Estatísticas
-      </button>
-      <button class="menuItem" (click)="scroll('Contato')">
-        Contato
-      </button>
-  </div>
-  <div class="BodyContent">
-    <div class="Title section" id="Title">
-      <div class="map" id="Mapa" *ngIf="isReady"
-          leaflet 
-          [leafletOptions]="options"
-          (leafletMapReady)="onMapReady($event)">
-      </div>
-    </div>
-    <div class="Recomend section" id="Recomendacoes">
-      <div class="Content">
-        <div class="recomendBody" fxLayout="column" fxLayoutAlign="flex-start">
-            <div class="item" fxFlex="90">
-              <h1>Avanço da doença</h1>
-              <canvas id="myChart2" width="2" height="1"></canvas>
-            </div>
-            <div class="chart2" fxLayout="row" >
-              <div class="item" fxLayout="column" fxFlex="45">
-                <h1>Casos por idade</h1>
-                <canvas id="myChart3" width="1" height="1"></canvas>
-              </div>
-              <div class="item" fxLayout="column" fxFlex="45">
-                <h1>Bairros mais afetados</h1>
-                <canvas id="myChart" width="1" height="1"></canvas>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div id="Contato" class="Footer section" fxLayout="column" fxLayoutAlign="space-around center">
-      <h2>Apoio:</h2>
-      <div class="rowContato">
-        <div fxLayout="row" class="itemContato">
-          <a  target="_blank" 
-              href="https://www.adamantina.sp.gov.br">
-              <img class="logoAdt" src="../assets/img/adtLogo.png"> 
-          </a>
-          <div class="altAdt" fxLayout="column">
-              <span class="altAdtItem"><mat-icon> phone</mat-icon> (18) 3502-9000</span>
-              <span class="altAdtItem"><mat-icon> email</mat-icon>ouvidoria.pma@adamantina.sp.gov.br</span>
-              <span class="altAdtItem"><mat-icon> map</mat-icon>Rua Osvaldo Cruz, 262 - Centro</span>
-              <span class="altAdtItem"><mat-icon>watch_later</mat-icon>Segunda a Sexta Feira das 07:30 as 11:00 e das 13:00 as 17:30</span>
-          </div>
-        </div>
-        <div fxLayout="row" class="itemContato">
-          <div fxLayout="row">
-            <a  target="_blank" 
-                href="https://www.fatec.edu.br/adamantina/">
-                <img class="logoFatec" src="../assets/img/cropped-Logo-fatec-Adamantina-1-2.png"> 
-            </a>
-            <div class="altAdt" fxLayout="column">
-              <span class="altAdtItem"><mat-icon> phone</mat-icon>(18) 3522-4181</span>
-              <span class="altAdtItem"><mat-icon> email</mat-icon> f291adm@cps.sp.gov.br</span>
-              <span class="altAdtItem"><mat-icon> map</mat-icon>Rua Paraná, 400 - Jardim Brasil</span>
-              <span class="altAdtItem"><mat-icon>watch_later</mat-icon>Segunda a Sexta Feira das 08:00 as 23:00</span>
-            </div>
-          </div> 
-        </div>
-      </div>
-      <div class="altContato">
-        Desenvolvido pelos alunos do 3º Semestre de Ciência de Dados
-      </div>
-    </div>
-  </div>
-</div> -->

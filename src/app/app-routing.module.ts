@@ -12,29 +12,29 @@ const routes: Routes = [
     redirectTo: 'home',
   },
   {
-    path: 'home',
-    component: MapaComponent,
-  },
-  {
     path: 'mapa',
     component: MapaComponent,
   },
   {
-    path: 'charts',
+    path: 'home',
+    component: MapaComponent,
+  },
+  {
+    path: 'metricas',
     component: ChartsComponent,
   },
   {
-    path: 'health-care',
+    path: 'dicas',
     component: HealthCareComponent,
   },
   {
-    path: 'help',
+    path: 'contato',
     component: ContactsComponent,
   },
-//   {
-//     path: '**',
-//     component: NotFoundComponent,
-//   },
+  // {
+  //   path: '**',
+  //   component: MapaComponent,
+  // },
 ];
 
 @NgModule({
