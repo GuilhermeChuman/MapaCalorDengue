@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  api_url: 'https://mapadengue.000webhostapp.com/api/',
+  api_url: 'https://infodengue.com.br/api/',
 
   //casos
   casos_mes_geoJson: 'casosNoMes/GeoJson',
